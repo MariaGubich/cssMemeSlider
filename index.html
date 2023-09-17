@@ -8,18 +8,47 @@
   <title>Meme Slider</title>
 </head>
 <body>
+  <div class="wrapper">
   <div class="images">
   <img src="assets/img/mr-bean-1.jpg" alt="meme-1">
   <img src="assets/img/mr-bean-2.jpg" alt="meme-2">
   <img src="assets/img/mr-bean-3.jpg" alt="meme-3">
   <img src="assets/img/mr-bean-4.jpg" alt="meme-4">
   </div>
-  <div class="nav-btns">
-    <div id="dot1" class="active"></div>
-    <div id="dot2"></div>
-    <div id="dot3"></div>
-    <div id="dot4"></div>
+
+  <div class="slider-text">
+    <p data-text="1">1</p>
+    <p data-text="2">2</p>
+    <p data-text="3">3</p>
+    <p data-text="4">4</p>
   </div>
-  <script src="script.js"></script>
+
+  <div class="nav-btns">
+    <label>
+      <span class="checkbox">
+        <span class="checkbox-circle"></span>
+      </span>
+      <input class="slider-input" type="radio" name="memes" checked data-id="1">
+    </label>
+    <label>
+      <span class="checkbox">
+        <span class="checkbox-circle"></span>
+      </span>
+      <input class="slider-input" type="radio" name="memes" data-id="2">
+    </label>
+    <label>
+      <span class="checkbox">
+        <span class="checkbox-circle"></span>
+      </span>
+      <input class="slider-input" type="radio" name="memes" data-id="3">
+    </label>
+    <label>
+      <span class="checkbox">
+        <span class="checkbox-circle"></span>
+      </span>
+      <input class="slider-input" type="radio" name="memes" data-id="4">
+    </label>
+  </div>
+</div>
 </body>
 </html>
