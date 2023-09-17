@@ -6,10 +6,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
   }
  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
   {
 	  display: block;
+  }
+
+  hr {
+    box-sizing: content-box; 
+    height: 0; 
+    overflow: visible; 
   }
 
 body {
@@ -34,21 +42,22 @@ body {
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
   background-color: rgba(55, 60, 82, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.863);
+  border: 1px solid rgba(255, 255, 255, 0.219);
 }
 
 .images {
   display: grid;
   grid-template-columns: repeat(5, 100%);
   gap: 1rem;
-  transition: transform .3s ease;
+  transition: transform .5s ease;
 }
 
 .images > img {
   max-width: 100%;
-  height: auto;
+  height: 90%;
   border-radius: 8%;
   margin: 0 auto;
+  vertical-align: middle;
  
 }
 
@@ -90,6 +99,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 60vw;
+  overflow: hidden;
 }
 
 .slider-text {
