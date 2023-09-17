@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.images > img {
+  max-width: 50%;
+  height: auto;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.nav-btns > div {
+  width: 16px;
+  height: 16px;
+  background:blue;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.nav-btns > div:hover { cursor: pointer; }
